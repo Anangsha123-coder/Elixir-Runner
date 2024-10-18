@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambulance Services - Elixir Runner</title>
+    <link rel="stylesheet" href="ambulance.css">
+</head>
+<body>
+    <section class="ambulance-section">
+        <div class="container">
+            <h1>Ambulance Services</h1>
+            <p>Enter your location and contact details to request an ambulance.</p>
+            
+            <form class="ambulance-form">
+                <div class="form-group">
+                    <label for="location">Select Location:</label>
+                    <input type="text" id="location" name="location" placeholder="Enter your city or area" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact">Contact Number:</label>
+                    <input type="tel" id="contact" name="contact" placeholder="Enter your phone number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" placeholder="Enter your full address" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="details">Additional Details (optional):</label>
+                    <textarea id="details" name="details" placeholder="Provide any additional instructions or info"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Request Ambulance</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

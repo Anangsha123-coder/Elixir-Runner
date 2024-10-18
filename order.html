@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elixir Runner | Order Medicines</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+
+    <!-- Medicine Order Section -->
+    <section class="medicine-order__container">
+        <h1>Order Your Medicines</h1>
+        <p>Select the medicines you need, specify the quantity, and place your order for home delivery:</p>
+
+        <form class="medicine-order-form" action="submit-order.html" method="POST">
+            <!-- Medicine List -->
+            <div class="medicine-item">
+                <label>
+                    <input type="checkbox" name="medicine[]" value="Paracetamol">
+                    Paracetamol (Expiry: Dec 2024) - $10 per pack
+                </label>
+                <input type="number" name="paracetamol-quantity" min="1" placeholder="Quantity">
+            </div>
+
+            <div class="medicine-item">
+                <label>
+                    <input type="checkbox" name="medicine[]" value="Ibuprofen">
+                    Ibuprofen (Expiry: Nov 2024) - $8 per pack
+                </label>
+                <input type="number" name="ibuprofen-quantity" min="1" placeholder="Quantity">
+            </div>
+
+            <div class="medicine-item">
+                <label>
+                    <input type="checkbox" name="medicine[]" value="Cetirizine">
+                    Cetirizine (Expiry: Jan 2025) - $12 per pack
+                </label>
+                <input type="number" name="cetirizine-quantity" min="1" placeholder="Quantity">
+            </div>
+
+            <div class="medicine-item">
+                <label>
+                    <input type="checkbox" name="medicine[]" value="Amoxicillin">
+                    Amoxicillin (Expiry: Feb 2025) - $15 per pack
+                </label>
+                <input type="number" name="amoxicillin-quantity" min="1" placeholder="Quantity">
+            </div>
+
+            <!-- Order Button -->
+            <div class="order-actions">
+                
+                <a href="tracking.html" class="btn form__btn">Place Order</a>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Elixir Runner. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
